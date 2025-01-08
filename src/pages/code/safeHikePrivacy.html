@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safehike</title>
+    <style>
+        /* Main color for SafeHike */
+        :root {
+          --safehike-color: #312c51;
+        }
+    
+        /* Feature card hover effect */
+        .feature-card:hover {
+          transform: translateY(-10px) rotate(1deg);
+          transition: transform 0.3s ease-in-out;
+        }
+    
+        /* Fade in animation */
+        .fade-in {
+          opacity: 0;
+          transform: translateY(30px);
+          transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+    
+        .fade-in-visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+    
+        /* Back button styling */
+        .back-button {
+          position: fixed;
+          top: 20px;
+          left: 20px;
+          z-index: 10;
+          background-color: rgba(255, 255, 255, 0.2);
+          padding: 10px;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+    
+        .back-button:hover {
+          background-color: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <a href="codeHub.html" class="back-button text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+    </a>
+
+
+    <!-- Hero Section -->
+    <section class="h-screen flex items-center justify-center bg-cover bg-center" style="background-color: var(--safehike-color);">
+      <div class="text-center text-white">
+        <h1 class="text-6xl mb-16"><strong>Privacy policy for Safehike</strong></h1>
+        <p class="text-xl mb-1">Safehike requires access to a user's location and contact list to be your partner while hiking.</p>
+        <p class="text-xl mb-1">With that said, everything is stored locally on the user's phone.</p>
+        <p class="text-xl mb-10">At no point does Safehike forward the user's personal data.</p>
+        <p class="text-xl mb-1">To make it crystal clear; your data stays on your phone. No exceptions.</p>
+      </div>
+    </section>
+  
+  <script type="module" defer src="../../main.ts"></script>
+</body>
+</html>
